@@ -1,0 +1,30 @@
+// import 'dart:html';
+
+import 'package:flutter/material.dart';
+import 'HomePage.dart';
+// import 'splash.dart';
+// import 'drop.dart';
+// import 'package:animate_do/animate_do.dart';
+
+
+
+void main() {
+  runApp(const MyApp());
+}
+class MyApp extends StatelessWidget{
+  const MyApp({Key?key}): super(key:key);
+
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter',
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.transparent,
+        primarySwatch: Colors.brown,
+      ),
+      home: MyHomePage(),
+
+    );
+  }
+}
